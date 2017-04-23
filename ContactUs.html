@@ -1,0 +1,38 @@
+﻿<form id="contactusfrom" class="form-horizontal col-sm-6" ng-controller="contactusform">
+    <fieldset>
+        <legend>
+            Contact Us
+        </legend>
+        <div class="form-group">
+            <label for="Name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" id="name" class="form-control" placeholder="Enter name" ng-model="contactus.name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" id="email" class="form-control" placeholder="Enter email" ng-model="contactus.email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Mobile" class="col-sm-2 control-label">Mobile:</label>
+            <div class="col-sm-10">
+                <input type="text" id="mobile" class="form-control" placeholder="Enter mobile number" ng-model="contactus.mobile">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Info" class="col-sm-2 control-label">Info:</label>
+            <div class="col-sm-10">
+                <textarea id="info" class="col-sm-12 form-control" ng-model="contactus.info"></textarea>
+            </div>
+        </div>
+        <div class="form-group" id="contactusFormButtons">
+            <button type="reset" class="btn btn-warning"><span class="glyphicon glyphicon-remove-sign cleargly"></span>&nbsp;&nbsp;Clear</button>
+            <button type="submit" class="btn btn-success" ng-click="contactusform()"><span class="glyphicon glyphicon-send sendgly"></span>&nbsp;&nbsp;Send</button>
+        </div>
+    </fieldset>
+</form>
+<div class="col-sm-6" id="googlemapsimg">
+    <img src="../Images/googleMap.jpg" style="height:100%;width:100%" />
+</div>

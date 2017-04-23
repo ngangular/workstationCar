@@ -1,0 +1,32 @@
+﻿<registration-form class="col-sm-4" ng-controller="homeform"></registration-form>
+<div class="col-sm-8 slidercls">
+            <img class="mySlides w3-animate-top" src="../Images/bmw-car-z4-6.jpg" />
+        <img class="mySlides w3-animate-left" src="../Images/audi4.jpg" />
+        <img class="mySlides w3-animate-right" src="../Images/audi5.jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/crv.jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/nissan1.jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/nissan2.jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/rdx.jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/th (1).jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/th (2).jpg" />
+        <img class="mySlides w3-animate-bottom" src="../Images/th.jpg" />
+ 
+
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2500);
+
+}
+    </script>   
+</div>

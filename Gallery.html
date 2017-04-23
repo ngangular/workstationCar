@@ -1,0 +1,10 @@
+﻿<registration-form class="col-sm-3" ng-controller="galleryform"></registration-form>
+<div class="col-sm-9" id="imagesblock" ng-controller="galleryform">
+    <div class="thumbnail col-sm-2 col-sm-3" ng-repeat="car in cars.records">
+        <span class="glyphicon glyphicon-remove removegly"></span>
+        <a href="" ng-click="editInfo(car)">
+        <span class="glyphicon glyphicon-edit editgly"></span></a>
+        <img  class="carimages" src="{{car.img}}" alt="not able to find"/>
+        <p><b>Model No:</b> {{car.Model}}</p>
+    </div>
+  </div>
